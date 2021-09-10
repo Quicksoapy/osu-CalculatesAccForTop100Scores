@@ -15,7 +15,7 @@ namespace aaaaaaaa
             float misses = 0;
             Console.WriteLine("give your username: ");
             string username = Console.ReadLine();
-            string json = new WebClient().DownloadString("https://osu.ppy.sh/api/get_user_best?u=" + username + "&limit=100&k=d2d0fdd1201eed4a4e9906ace4d57b28f1a769f6");
+            string json = new WebClient().DownloadString("https://osu.ppy.sh/api/get_user_best?u=" + username + "&limit=100&k=");
             
             
             dynamic response = JsonConvert.DeserializeObject(json);
